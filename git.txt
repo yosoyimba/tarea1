@@ -1,0 +1,50 @@
+Ayuda memoria de comandos git:
+
+1) git init: inicializa un directorio como repositorio git (por defecto el directorio actual).
+
+2) git clone: copia un repositorio git. La sintaxis del comando es: 
+						git clone [url].
+
+3) git add: Sintaxis: git add nombre_archivo.
+	    Agrega el archivo de nombre "nombre_archivo" al repositorio.
+
+4) git status: muestra el estado de los archivos del repositorio (por ejemplo, si hubo cambios desde el último commit, dónde están los cambios, etc).
+
+5) git diff: muestra las diferencias entre el estado actual del proyecto, y el último snapshot del proyecto.
+
+6) git commit: guarda el estado actual del proyecto y todos los archivos que lo conforman. A esta acción se le suele llamar "tomar una foto (snapshot)".
+
+Flags:
+
+	-a: automáticamente agrega todos archivos modificados al repositorio antes de hacer el commit (hace un add de todos los archivos nuevos)
+	-m: permite agregar un comentario.
+
+7) git rm: remueve archivos de la zona de almacenamiento.
+
+8) git branch: Sintaxis: git branch (nombre de la rama). 
+	       Si no se especifica un nombre de rama, simplemente lista todas las ramas actuales. Si se especifica, crea una nueva.
+
+Flags:
+
+	-d: borra la rama especificada.
+
+9) git checkout: cambia de contexto hacia una rama nueva. 
+		 Sintaxis: git checkout (nombre de rama)
+
+10) git merge: Uno de los comandos fundamentales: entrelaza 2 ramas actualizando una de ellas con los cambios que se hayan hecho.
+
+11) git log: muestra la cantidad de commits y el orden en el que se hicieron (historia) de una rama.
+
+12) git tag: marca un momento en la historia como importante. 
+
+Flags: -a: abre un editor y permite escribir un mensaje. Este mensaje puede verse con git log --decorate
+
+13) git fecth: descarga nuevas ramas de un repositorio remoto.
+
+14) git pull: busca en un repositorio remoto y hace un merge con la rama actual.
+
+Sintaxis: git pull [alias]  (alias indica el repositorio remoto).
+
+15) git push: Contrario al git pull, este comando levanta las nuevas ramas del proyecto a un repositorio remoto.
+
+Sintaxis: git push [rama] [alias]
